@@ -1,0 +1,85 @@
+.home-container {
+    width: 95%;
+    margin: auto;
+    color: #0B1F33;
+    height: 100vh;
+}
+.title {
+    margin-top: 30px;
+}
+.title > h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.title > h3 {
+    color: rgb(59, 52, 52);
+    margin-top: 10px
+}
+.new-trip-btn {
+    margin-top: 30px;
+    background-color: #0F766E !important;
+    border: solid 1px #0F766E !important;
+    padding: 10px 30px !important;
+    display: flex !important;
+}
+.new-trip-btn:active {
+    background-color: #0b635c !important;
+    border: solid 1px #0b635c !important;
+}
+.trips-table {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: solid grey 2px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.trips-table-title {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+}
+.trips-table-title > h2 {
+    color: #0B1F33;
+    font-weight: bold;
+}
+.trips-table-columns {
+    padding: 10px 30px !important;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #eceff3;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+
+}
+.trips-table-columns > p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+}
+.trips-table-content {
+    height: 60px;
+    display: flex;
+    padding: 30px !important;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.trips-table-content:hover {
+    cursor: pointer;
+    background-color: #eceff3;
+}
+
+.trips-table-contents {
+    width: 100%;
+    height: auto;
+}
+
+.trips-table-contents > p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.trip-btn {
+    padding: 5px 20px !important;
+}
