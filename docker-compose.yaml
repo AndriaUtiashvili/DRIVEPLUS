@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./drive-plus-api
+    container_name: driveplus-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./drive-plus-api:/app
+    command: python app.py
+    working_dir: /app
+    networks:
+      - app-net
+
+  frontend:
+    build:
+      context: ./drive-plus
+    container_name: driveplus-frontend
+    ports:
+      - "3000:3000"
+    working_dir: /app
+    command: npm start
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
